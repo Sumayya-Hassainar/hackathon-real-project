@@ -9,9 +9,9 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'https://hackathon-backend-6n5k.onrender.com',
-        changeOrigin: true,
-      },
-    },
-  },
+        target: 'http://localhost:3001',
+        changeOrigin: true
+      }
+    }
+  }
 });
